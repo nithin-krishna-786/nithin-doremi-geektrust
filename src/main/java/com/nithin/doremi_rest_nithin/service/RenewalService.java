@@ -28,6 +28,7 @@ public class RenewalService implements IRenewalService {
 
 		if (doReMiSubscription.getSubscriptionStatus().equals(SubscriptionStatus.NOT_STARTED))
 			throw new SubscriptionNotFoundException("SUBSCRIPTIONS_NOT_FOUND");
+		
 		if (doReMiSubscription.getSubscriptionStatus().equals(SubscriptionStatus.STARTED))
 			throw new SubscriptionNotFoundException("SUBSCRIPTIONS_NOT_FOUND");
 
